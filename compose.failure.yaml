@@ -1,0 +1,6 @@
+
+services:
+  api:
+    environment:
+      SIMULATE_FAILURE: "true"
+      APP_VERSION: ${APP_VERSION}
