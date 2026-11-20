@@ -7,9 +7,9 @@ PROJECT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$PROJECT_DIR"
 
 # Configuração
-ENV_FILE="config/.env.prod"
+ENV_FILE="${ENV_FILE:-config/.env.prod}"
 COMPOSE_FILE="compose.yaml"
-PROJECT_NAME="fp07-prod"
+PROJECT_NAME="${PROJECT_NAME:-fp07-prod}"
 
 TARGET_VERSION="${1:-}"
 STABLE_VERSION="${2:-}"
